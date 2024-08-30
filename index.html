@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/sass/styles.scss">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title></title>
+</head>
+
+<body class="bg-gray-900 text-white">
+    <header class="l-header fixed top-0 w-full bg-gray-800 shadow-md z-50">
+        <nav class="nav bd-grid max-w-7xl mx-auto flex items-center justify-between p-4">
+            <div>
+                <a href="#" class="nav__logo text-2xl font-bold text-white">Hemanth D L</a>
+            </div>
+
+            <div class="nav__menu hidden md:block" id="nav-menu">
+                <ul class="nav__list flex space-x-6">
+                    <li class="nav__item"><a href="#" class="nav__link text-lg">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link text-lg">About</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link text-lg">Projects</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link text-lg">Skills</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link text-lg">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle md:hidden" id="nav-toggle">
+                <ion-icon name="menu" class="text-3xl text-white"></ion-icon>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="l-main max-w-7xl mx-auto mt-20 p-4">
+
+        <section id="home"
+            class="home flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 md:space-x-12">
+            <div class="home__information space-y-4">
+                <span class="home__pressent text-gray-400 text-xl block">Hey, I'm</span>
+                <h1 class="home__title text-5xl font-bold">Hemanth D L </h1>
+                <span class="home__skill text-2xl block py-2">MERN Stack Developer</span>
+                <div class="py-4">
+                    <a onclick="window.open('./assets/HemanthDL-CSE.pdf')" href="#"
+                        class="home__button bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full">DOWNLOAD
+                        CV</a>
+                </div>
+                <div class="home__social flex space-x-4 mx-11 py-4">
+                    <a href="https://www.linkedin.com/in/hemanth-d-l-32a9b122a">
+                        <ion-icon name="logo-linkedin" class="home__social-icon text-2xl"></ion-icon>
+                    </a>
+                    <a href="https://www.github.com/HemanthDL">
+                        <ion-icon name="logo-github" class="home__social-icon text-2xl"></ion-icon>
+                    </a>
+                </div>
+            </div>
+            <div class="home__img">
+                <img src="assets/img/photo.jpeg" alt="Profile" class="rounded-full w-48 h-48 md:w-64 md:h-64">
+            </div>
+        </section>
+
+
+        <section id="about" class="mt-20">
+            <h2 class="text-4xl font-bold border-b-4 border-blue-500 inline-block mb-4">About Me</h2>
+            <p class="text-lg leading-7">I am a passionate MERN with experience in creating dynamic and responsive
+                websites. My focus is on delivering high-quality code and user-friendly experiences.</p>
+        </section>
+
+
+        <section id="projects" class="mt-20">
+            <a href="https://www.github.com/HemanthDL/AutoMate">
+
+                <h2 class="text-4xl font-bold border-b-4 border-blue-500 inline-block mb-4">Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-800 p-6 rounded-lg">
+                        <img id="sams" class="py-3 my-3" src="./assets/img/automate.png" alt="">
+                        <h3 class="text-2xl font-bold mb-2">AutoMate</h3>
+                        <p class="text-lg">Created a user‑friendly application to simplify vehicle service scheduling
+                            and complaint management, improving efficiency and user experience.
+                            Customers can book service slots for available dates and view the bill after service
+                            completion.
+                            Mechanics can accept requests and mark them as completed upon finishing the service.</p><br>
+                        <p><strong>Technologies Utilized:</strong> EJS, CSS, JavaScript, MongoDB, Node.js, Express
+                        </p>
+                    </div>
+            </a>
+            <a href="https://www.github.com/HemanthDL/SAMS---Student-Attendance-Management-System">
+
+
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <img id="sams" class="py-3 my-3" src="./assets/img/sams.png" alt="">
+                    <h3 class="text-2xl font-bold mb-2">SAMS - Student Attendance Management System</h3>
+                    <p class="text-lg">Designed and implemented an integrated system to automate and streamline the
+                        recording and calculation of student attendance.
+                        Teachers can mark attendance and generate comprehensive reports for all students.
+                        Students can access their attendance records across various subjects</p>
+                    <br>
+                    <p><strong>Technologies Utilized:</strong> HTML, CSS, JavaScript, MySQL, PHP
+                    </p>
+                </div>
+            </a>
+            <a href="https://www.github.com/HemanthDL/Taskify">
+
+                <div id="task" class="bg-gray-800 p-6 rounded-lg">
+                    <img id="sams" class="py-3 my-3" src="./assets/img/taskify.png" alt="">
+                    <h3 class="text-2xl font-bold mb-2">Taskify - Manage Your Task Daily</h3>
+                    <p class="text-lg">Created a simple Todo app using ReactJS and Tailwind CSS.This app allows you to
+                        add,edit and delete your daily task.Allows a user to store tasks permanently in local storage
+                    </p>
+                    <br>
+                    <p><strong>Technologies Utilized:</strong> ReactJS,Tailwind CSS
+                    </p>
+                </div>
+            </a>
+            <a href="https://www.github.com/HemanthDL/Currency-Converter-Using-API">
+
+                <div class="bg-gray-800 p-6 rounded-lg">
+                    <img id="sams" class="py-3 my-3" src="./assets/img/currency.png" alt="">
+                    <h3 class="text-2xl font-bold mb-2">Currency Converter</h3>
+                    <p class="text-lg">Developed a straightforward application to explore and implement data retrieval
+                        from APIs.
+                        • Users select a ’From Currency’ and a ’Target Currency’ to convert an entered amount to the
+                        specified target currency using an API.</p>
+                    <br>
+                    <p><strong>Technologies Utilized:</strong> HTML, CSS, JavaScript
+                    </p>
+                </div>
+            </a>
+            </div>
+        </section>
+
+
+        <section id="skills" class="mt-20">
+            <h2 class="text-4xl font-bold border-b-4 border-blue-500 inline-block mb-4">Skills</h2>
+            <div class="flex flex-wrap space-x-4">
+                <span class="bg-blue-500 text-white py-2 px-4 rounded-full">HTML</span>
+                <span class="bg-blue-500 text-white py-2 px-4 rounded-full">CSS</span>
+                <span class="bg-blue-500 text-white py-2 px-4 rounded-full">JavaScript</span>
+                <span class="bg-blue-500 text-white py-2 px-4 rounded-full">ReactJS</span>
+                <span class="bg-blue-500 text-white py-2 px-4 rounded-full">Node.js</span>
+                <span class="bg-blue-500 text-white py-2 px-4 rounded-full">Express</span>
+                <span class="bg-blue-500 text-white py-2 px-4 rounded-full">MySQL</span>
+                <span class="bg-blue-500 text-white py-2 px-4 rounded-full">MongoDB</span>
+                <span class="bg-blue-500 text-white py-2 px-4 rounded-full">Java</span>
+                <span class="bg-blue-500 text-white py-2 px-4 rounded-full">Bootstrap</span>
+                <span class="bg-blue-500 text-white py-2 px-4 rounded-full">Tailwind</span>
+            </div>
+        </section>
+
+
+        <section id="contact" class="mt-20">
+            <h2 class="text-4xl font-bold border-b-4 border-blue-500 inline-block mb-4">Contact Me</h2>
+            <form action="#" method="post" class="space-y-4">
+                <input type="text" name="name" placeholder="Your Name"
+                    class="w-full bg-gray-800 text-white py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <input type="email" name="email" placeholder="Your Email"
+                    class="w-full bg-gray-800 text-white py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <textarea name="message" rows="4" placeholder="Your Message"
+                    class="w-full bg-gray-800 text-white py-2 px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full"
+                    onclick="alert('Message Sent')">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>

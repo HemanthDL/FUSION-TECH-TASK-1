@@ -1,0 +1,11 @@
+#sams{
+  border-radius: 1.5rem;
+}
+
+a:hover{
+  translate: 0.5rem;
+}
+
+#task{
+  height: 35.5rem;
+}
